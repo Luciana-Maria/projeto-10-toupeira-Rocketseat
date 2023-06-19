@@ -1,10 +1,11 @@
 <p align="center">
-<img src=".github/preview.png" alt="Demonstração do projeto" width="100%" />
+<img src=".github/preview.png" alt="Demonstração do projeto" width="80%" />
 </p>
 
 ## 🖥️ Projeto
 
 Jardim das toupeiras.
+[Clique aqui!](https://luciana-maria.github.io/projeto-10-toupeira-Rocketseat/)
 
 
 ## 🚀 Tecnologias
