@@ -1,0 +1,182 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.page{/*contem todo os elementos/conteudos*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;/*Esconde qualquer conteúdo que estenda além das bordas do contêiner.*/
+}
+.background img{
+  width: 100%; /*largura */
+  height: 100%;/*altura*/
+  position: fixed;/*fixa a imagem*/
+  top: 0;/*topo*/
+  left: 0;/*esquerda*/
+
+}
+
+.topes{
+  display: grid;
+  grid-template-columns:repeat(4, 1fr) ;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3rem;
+  position: relative;
+  margin-top: 6rem;
+}
+
+#tope{
+  width: 12rem;
+}
+ /* Toupeira 1/2/3 */
+  .toupeira01, .toupeira02, .toupeira03 {
+    position: absolute; 
+  }
+
+  /*animação*/
+ .toupeira01 {
+	animation: updow-1 1.5s 2.3s linear infinite;
+	opacity: 0;
+  }
+  
+  .toupeira02 {
+	animation: updow-2 1.5s 2.3s linear infinite;
+	opacity: 0;
+  }
+  
+  .toupeira03 {
+	animation: updow-3 1.5s 2.3s linear infinite;
+	opacity: 0;
+  }
+   /* Toupeira 4/5/6 */
+  
+  .toupeira04, .toupeira05, .toupeira06 {
+	position: absolute;/*Define a posição desses elementos como absoluta em relação ao seu ancestral posicionado mais próximo.*/
+	right: 0;
+	top: 37%;/*Posiciona esses elementos no canto superior direito(right), com o topo alinhado a 37% da altura do ancestral posicionado mais próximo.*/
+  }
+  
+  .toupeira04 {
+	animation: updow-1 1.5s 700ms linear infinite;
+	opacity: 0;
+  }
+  
+  .toupeira05 {
+	animation: updow-2 1.5s 700ms linear infinite;
+	opacity: 0;
+  }
+  
+  .toupeira06 {
+	animation: updow-3 1.5s 700ms linear infinite;
+	opacity: 0;
+  }
+
+   /* Toupeira 7/8/9 */
+  
+  .toupeira07, .toupeira08, .toupeira09 {/*Seleciona os elementos com as classes "toupeira07", "toupeira08" e "toupeira09".*/
+	position: absolute;/* Define a posição desses elementos como absoluta em relação ao seu ancestral posicionado mais próximo.*/
+	right: 26.6%;/*: Posiciona esses elementos no canto inferior direito, com a margem inferior alinhada a 0(bottom:0) e a margem direita alinhada a 26.6% da largura do ancestral posicionado mais próximo.*/
+	bottom: 0;
+  }
+  
+  .toupeira07 {
+	animation: updow-1 1.5s 1s linear infinite;
+	opacity: 0;
+  }
+  
+  .toupeira08 {
+	animation: updow-2 1.5s 1s linear infinite;
+	opacity: 0;
+  }
+  
+  .toupeira09 {
+	animation: updow-3 1.5s 1s linear infinite;/* Aplica uma animação chamada "updow-1" com duração de 1.5s, atraso de 1s, repetição linear e repetição infinita.
+	opacity: 0;: Define a opacidade desses elementos como 0 (totalmente transparentes).*/
+	opacity: 0;
+  }
+  
+  
+  @keyframes updow-1 {/*para animar a toupeira 1  Define uma animação chamada "updow-1".
+
+	Define vários pontos-chave (0%, 10%, 20%, 60%, 70%, 100%) com diferentes valores de opacidade para criar uma animação de desaparecimento e aparecimento.
+	A duração e o tempo entre os pontos-chave são especificados para controlar o efeito de animação.*/
+	0% {
+	  opacity: 0;
+	}
+  
+	10% {
+	  opacity: 1;
+	}
+  
+	20% {
+	  opacity: 0;
+	}
+  
+	60% {
+	  opacity: 1;
+	}
+  
+	70% {
+	  opacity: 0;
+	}
+  
+	100% {
+	  opacity: 0;
+	}
+  }
+  
+  @keyframes updow-2 { /*para anima a toupera 2  Define uma animação chamada "updow-2" semelhante à "updow-1", mas com pontos-chave e valores de opacidade diferentes.*/
+	0% {
+	  opacity: 0;
+	}
+  
+	10% {
+	  opacity: 0;
+	}
+  
+	20% {
+	  opacity: 1;
+	}
+  
+	30% {
+	  opacity: 0;
+	}
+  
+	50% {
+	  opacity: 1;
+	}
+	60% {
+	  opacity: 0;
+	}
+  
+	100% {
+	  opacity: 0;
+	}
+}
+  
+ @keyframes updow-3 {/*anima a toupeira 3 Define uma animação chamada "updow-3" semelhante às anteriores, mas com pontos-chave e valores de opacidade diferentes.
+
+	Essas são as explicações passo a passo das regras de estilo CSS fornecidas. Elas são usadas para controlar a aparência e as animações dos elementos na página HTML correspondente.*/
+	0% {
+	  opacity: 0;
+	}
+  
+	20% {
+	  opacity: 0;
+	}
+  
+	30% {
+	  opacity: 1;
+	}
+  
+	50% {
+	  opacity: 0;
+	}
+	
+	100% {
+	  opacity: 0;
+	}
+  }
+  
